@@ -1,0 +1,23 @@
+Source: libroman-perl
+Section: perl
+Priority: optional
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Daniel Ruoso <daniel@ruoso.com>,
+ gregor herrmann <gregoa@debian.org>
+Standards-Version: 3.9.6
+Homepage: https://metacpan.org/release/Roman
+Vcs-Git: git://anonscm.debian.org/pkg-perl/packages/libroman-perl.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libroman-perl.git
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: perl, libtest-pod-perl, libtest-pod-coverage-perl
+Testsuite: autopkgtest-pkg-perl
+
+Package: libroman-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends}
+Description: Perl module for converting between Roman and Arabic numerals
+ The Roman module provides some functions which help conversion of numeric
+ notation between Roman and Arabic. 
+ .
+ Domain of valid Roman numerals is limited to less than 4000, since proper
+ Roman digits for the rest are not available in ASCII.
